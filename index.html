@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <!-- photo gallery -->
+<style>
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    color: magenta;
+  }
+  #intro {
+    color: gray;
+  }
+  #galleries li a {
+    color: green;
+  }
+
+</style>
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,11 +23,11 @@
   </head>
   <body>
   	<h1> A photo gallery application</h1>
-  	<div>
+  	<div id="introduction">Below are a list of galleries that contain images of animals.</div>
   	<h2>Galleries</h2>
     <ul>
-      <li><a href='cats.html'>Cats</a></li>
-      <li><a href='dogs.html'>Dogs</a></li>
+      <div id="galleries"><li><a href='cats.html'>Cats</a></li>
+      <li><a href='dogs.html'>Dogs</a></li></div>
     </ul>
     <div>  
   </body>
