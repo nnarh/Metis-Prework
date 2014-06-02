@@ -1,4 +1,3 @@
-
 #99 Bottles of Beer on the Wall
 beers = 99
 
@@ -34,5 +33,31 @@ elsif  response == "BYE BYE BYE"
 		puts "NO, NOT  SINCE #{years}"
 	end  
 end
-		
 
+#Leap years
+
+	puts "Hello and welcome to the leap game, may I have your name?"
+	name = gets.chomp
+
+	puts "Thanks #{name}!"
+	puts ""
+	puts "#{name}, can you please select a year(any)?"
+	start_yr = gets.chomp.to_i#get as int here to aviod messiness in while loop
+
+	puts "Great #{name}, now can I also get another year that is greater than the previous year that you selected?"
+	end_yr = gets.chomp.to_i
+	puts ''
+
+	puts "Ok great! You selected #{start_yr} and #{end_yr}"
+  year = start_yr
+
+		
+ while year <= end_yr
+ 	if year%4 == 0 #all nums divisible by 4 are leap yrs
+ 		if year%100 != 0 || year%400 == 0 
+ 			puts year
+ 		end
+ 	end
+
+ 	year = year + 1
+	end 
