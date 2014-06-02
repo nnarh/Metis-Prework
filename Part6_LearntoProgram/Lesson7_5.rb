@@ -1,3 +1,4 @@
+
 #99 Bottles of Beer on the Wall
 beers = 99
 
@@ -13,22 +14,25 @@ end
 puts "1 bottle of beer on the wallll!"
 
 #Deaf grandma
+puts "Lets go and talk to Granny!....Introduce yourself"
 
 while true
 	years = rand(1930..1950).to_s
-
-	puts "Lets go and talk to Granny!....Introduce yourself"
 	response = gets.chomp
-	puts "Grandma: HUH?! SPEAK UP, SONNY!"
-	puts "You should try yelling...*cough*...all CAPITALS....*cough*"
-	if response == gets.chomp.upcase
-		then puts "Grandma: NO, NOT SINCE #{years}"
-	elsif puts "Grandma: HUH?! SPEAK UP, SONNY!"
-			else puts "Grandma: NO, NOT SINCE #{years}"
-		if response == "BYE"
-			break
-	  end
-	end
-end
 
+	if response == "BYE"
+	puts "What did you say SONNY?? Repeat yourself three times please"
+elsif  response == "BYE BYE BYE"
+	puts "OK BYE SONNY"
+	break
+  end
+
+	if response != response.upcase
+		puts "HUH!  SPEAK UP, SONNY!"
+		puts "Try responding in all CAPS"
+	elsif response != "BYE"
+		puts "NO, NOT  SINCE #{years}"
+	end  
+end
+		
 
