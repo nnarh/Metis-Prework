@@ -35,11 +35,9 @@ elsif  response == "BYE BYE BYE"
 end
 
 #Leap years
-
 	puts "Hello and welcome to the leap game, may I have your name?"
 	name = gets.chomp
 
-	puts "Thanks #{name}!"
 	puts ""
 	puts "#{name}, can you please select a year(any)?"
 	start_yr = gets.chomp.to_i#get as int here to aviod messiness in while loop
@@ -50,6 +48,7 @@ end
 
 	puts "Ok great! You selected #{start_yr} and #{end_yr}"
   year = start_yr
+	
 
 		
  while year <= end_yr
